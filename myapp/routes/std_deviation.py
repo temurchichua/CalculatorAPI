@@ -1,8 +1,9 @@
 from myapp import app
+from flask import request
 
 
-@app.route('/stddev/<string:numbers>', methods=['GET'])
-def get_stddev(numbers):
+@app.route('/stddev', methods=['POST'])
+def post_stddev():
 
     def std_deviation(population_list):
         """calculates population standard deviation by taking population data as a list"""
@@ -33,9 +34,11 @@ def get_stddev(numbers):
         standard_deviation = new_mean ** 0.5
         return standard_deviation
 
-    pop_data = numbers.split(',')
-    pop_data_int = []
-    for n in pop_data:
-        pop_data_int.append(int(n))
-    json_to_return = {'message': f'Received data: {pop_data_int} Standard Deviation: {std_deviation(pop_data_int)}'}
+    # receive data and calculate st.d.
+    try:
+        data = request.get_json()
+        pop_data = data['population']
+    except Exception as error_message:
+        return {error_message: "no JSON or invalid JSON received. Valid format: {'population: [list of integers or floats]}"}, 400
+    json_to_return = {'message': f'Received data: {pop_data} Standard Deviation: {std_deviation(pop_data)}'}
     return json_to_return, 200
