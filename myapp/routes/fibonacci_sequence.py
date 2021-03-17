@@ -15,5 +15,5 @@ def Fibonacci(max_num):
         secondNum = thirdNum
         thirdNum = firstNum + secondNum
         sequence.append(thirdNum)
-    return jsonify(sequence),200
+    return jsonify(sequence), 201
 
