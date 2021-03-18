@@ -1,5 +1,5 @@
 from myapp import app
-from flask import request
+from flask import request, jsonify
 
 
 @app.route('/calcdt', methods=['POST'])
@@ -12,7 +12,7 @@ def post_to_function():
 
     result = calculate_determinant(matrix)
 
-    return str(result), 200
+    return jsonify(result), 200
 
 
 def calculate_determinant(matrix, check_matrix_validity = 1):
