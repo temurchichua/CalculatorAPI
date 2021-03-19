@@ -7,4 +7,3 @@ from .std_deviation import post_stddev
 from .pythagorean_theorem import pythagorean_theorem
 from .mean import post_mean
 from .calculator import calc
-from .factorial import factorial
