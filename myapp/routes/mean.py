@@ -1,5 +1,5 @@
 from myapp import app
-from flask import request, jsonify
+from flask import request
 
 @app.route('/mean', methods=['POST'])
 def post_mean():
@@ -11,4 +11,4 @@ def post_mean():
         return "Argument must be an integer or a float", 400
     n = len(nums)
     result = sum1/n
-    return jsonify(result), 200
+    return {"message": result}, 200
