@@ -6,4 +6,4 @@ from .std_deviation import post_stddev
 from .determinant_calculator import post_to_function
 from .std_deviation import get_stddev
 from .pythagorean_theorem import pythagorean_theorem
-from .mean import post
+from .mean import post_mean
