@@ -54,7 +54,7 @@ def calc(A) -> float:
 
 
 @app.route('/post', methods=['POST'])
-def calc():
+def calc1():
     x = request.data
     print(x)
     # define mathematical operators
