@@ -1,4 +1,4 @@
-from CalculatorAPI.myapp import app
+from myapp import app
 
 
 @app.route('/pythagoras/<int:a>&<int:b>')

@@ -3,7 +3,8 @@ from flask import request, jsonify
 
 @app.route('/mean', methods=['POST'])
 def post_mean():
-    nums = request.get_json()    
+    data = request.get_json()
+    nums = data["numbers"]
     try:
         sum1 = sum(nums)
     except TypeError:
