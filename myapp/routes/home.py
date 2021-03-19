@@ -1,4 +1,4 @@
-from myapp import app
+from CalculatorAPI.myapp import app
 
 
 @app.route("/")
