@@ -10,6 +10,7 @@ def post_mean():
         sum1 = sum(nums)
     except TypeError:
         return {"message": "Argument must be an integer or a float"}, 400
+
     n = len(nums)
     result = sum1/n
     return {"message": result}, 200

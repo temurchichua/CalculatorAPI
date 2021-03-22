@@ -3,6 +3,7 @@ from flask import request
 
 
 @app.route('/pythagorean_theorem/<string:unknown_side>', methods=['POST'])
+
 def pythagorean_theorem(unknown_side):
     data = request.json
     a = data["a"]
