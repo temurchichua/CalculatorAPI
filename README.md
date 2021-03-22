@@ -23,7 +23,6 @@ endpoint: `/function_endpoint/`
 return: type | content description
 
 
-
 ### Calculating Standard Deviation
 #### description
 Receives a JSON containing a list of numbers (`integers` or `floats`) and calculates Population Standard Deviation of the data.
@@ -31,6 +30,7 @@ Receives a JSON containing a list of numbers (`integers` or `floats`) and calcul
 endpoint: `/stddev/`
 
 return: `float` | standard deviation of the data
+
 
 ### პითაგორას ფორმულა
 თუ გინდათ რომ მართკუთხ სამკუთხედის ჰიპოთენუზა გაიგოთ ჩაწერეთ მისამართში a და b კათეტები. მაგ.: 
