@@ -9,3 +9,5 @@ from .mean import post_mean
 from .calc1 import calc1
 from .factorial import factorial
 from .square_root_finder import square_root
+from .median import medianer
+from .convert_to_radians import toRadians
