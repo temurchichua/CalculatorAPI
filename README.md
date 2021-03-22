@@ -1,8 +1,8 @@
 # Calculator API
-This is First every collaboration by Unilab Python Dev Team 2021
+This is first ever collaboration by Unilab Python Dev Team 2021
 
 ## Instruction
-To run the app remotely run following commands
+To run the app remotely run following commands:
 ```bash
 pip install -r requirements.txt
 python main.py
@@ -21,6 +21,16 @@ small description of the method
 endpoint: `/function_endpoint/`
 
 return: type | content description
+
+
+
+### Calculating Standard Deviation
+#### description
+Receives a JSON containing a list of numbers (`integers` or `floats`) and calculates Population Standard Deviation of the data.
+#### structure
+endpoint: `/stddev/`
+
+return: `float` | standard deviation of the data
 
 ### პითაგორას ფორმულა
 თუ გინდათ რომ მართკუთხ სამკუთხედის ჰიპოთენუზა გაიგოთ ჩაწერეთ მისამართში a და b კათეტები. მაგ.: 
